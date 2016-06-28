@@ -22,7 +22,7 @@ if exist('poolSize', 'var') && ~isempty(poolSize)
     setMatlabPool(poolSize)
 end
 
-setEEGLAB;
+setEEGLAB(eeglabPath);
 
 parfor i = 1:numel(id)
 
